@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "./book.css"
+import "./book.css";
 function Book() {
   const baseUrl = "http://localhost:3001/api/books";
   const [data, setData] = useState([]);
@@ -8,14 +8,12 @@ function Book() {
   const [error, setError] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("");
 
-
   useEffect(() => {
     const fetchData = async () => {
       try {
-
         let url = baseUrl;
-        if(selectedCategory) {
-          url += `?category=${selectedCategory}`
+        if (selectedCategory) {
+          url += `?category=${selectedCategory}`;
         }
 
         const response = await fetch(url);
@@ -49,10 +47,9 @@ function Book() {
       <h2>Fetch Example</h2>
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
 
-
       <div className="filters">
         <label>Categories</label>
-        <select onChange={(e)=> setSelectedCategory(e.target.value)}>
+        <select onChange={(e) => setSelectedCategory(e.target.value)}>
           <option value="">All</option>
           <option value="romance">Romance</option>
           <option value="science">Science</option>
@@ -64,8 +61,6 @@ function Book() {
           <option value="other">other</option>
         </select>
       </div>
-
-
 
       {isLoading ? (
         <p>Loading...</p>
