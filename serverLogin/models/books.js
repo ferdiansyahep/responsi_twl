@@ -1,33 +1,35 @@
 const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
-const bookSchema = new mongoose.Schema({
+const BookSchema = new Schema({
   title: {
     type: String,
     required: true,
   },
   slug: {
     type: String,
-    required: true,
-    unique: true,
-  },
-  stars: {
-    type: String,
-    default: 0,
+    //required: true,
   },
   description: {
     type: String,
-    required: true,
-  },
-  category: {
-    type: [String],
-    required: true,
+    //required: true,
   },
   thumbnail: {
     type: String,
-    required: true,
+    //required: true,
+  },
+  stars: {
+    type: Number,
+    //required: true,
+  },
+  category: {
+    type: Array,
+    //required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now(),
   },
 });
 
-const Book = mongoose.model("Book", bookSchema);
-
-module.exports = Book;
+module.exports = mongoose.model("Book", BookSchema);
