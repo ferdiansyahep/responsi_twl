@@ -31,20 +31,18 @@
   --box-shadow: 0 2rem 3rem var(--color-light);
 }
 * {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    appearance: 0;
-    border: 0;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 14px;
-  }
-  
-  
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: 0;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
 
 .text-muted {
   color: var(--color-info-dark);

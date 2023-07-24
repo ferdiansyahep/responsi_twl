@@ -1,7 +1,7 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import Right from "../components/right/Right";
 
-import CreateBook from "../components/dash/createBook";
+import AddUser from "../components/Main/AddUser";
 import "./dash.css";
 
 const AddPage = () => {
@@ -10,7 +10,7 @@ const AddPage = () => {
       <div className="container">
         <Sidebar />
         <div className="main">
-          <CreateBook />
+          <AddUser />
         </div>
         <Right />
       </div>

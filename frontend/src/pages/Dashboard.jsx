@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar/Sidebar";
-import Book from "../components/dash/book";
+import UsserList from "../components/Main/UserList";
 import Right from "../components/right/Right";
 import "./dash.css";
 
@@ -9,7 +9,7 @@ const Dashboard = () => {
       <div className="container">
         <Sidebar />
         <div className="main">
-          <Book />
+          <UsserList />
         </div>
         <Right />
       </div>

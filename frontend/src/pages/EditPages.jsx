@@ -1,6 +1,6 @@
 import Sidebar from "../components/Sidebar/Sidebar";
 import Right from "../components/right/Right";
-import EditBook from "../components/dash/editBook";
+import EditUser from "../components/Main/EditUser";
 import "./dash.css";
 
 const EditPage = () => {
@@ -9,7 +9,7 @@ const EditPage = () => {
       <div className="container">
         <Sidebar />
         <div className="main">
-          <EditBook />
+          <EditUser />
         </div>
         <Right />
       </div>
