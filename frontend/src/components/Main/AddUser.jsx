@@ -12,7 +12,7 @@ const AddUser = () => {
   const saveUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3001/users", {
+      await axios.post("responsi-twl.vercel.app/users", {
         name,
         email,
         gender,
