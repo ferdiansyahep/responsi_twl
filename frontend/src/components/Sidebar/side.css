@@ -1,5 +1,3 @@
-
-
 aside {
   height: 100vh;
   position: fixed;
@@ -256,4 +254,10 @@ main .recent-orders a {
   display: block;
   margin: 1rem auto;
   color: var(--color-primary);
+}
+
+aside .sidebar .logout {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
 }

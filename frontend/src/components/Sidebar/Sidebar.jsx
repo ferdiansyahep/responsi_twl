@@ -12,8 +12,6 @@ const Sidebar = () => {
     const menuBtn = document.getElementById("menu-btn");
     const closeBtn = document.getElementById("close-btn");
 
-    
-    
     menuBtn.addEventListener("click", () => {
       sideMenu.style.display = "block";
     });
@@ -31,7 +29,7 @@ const Sidebar = () => {
             <div className="logo">
               <img src={logo} alt="Logo" />
               <h2>
-                Ferdi<span className="danger">Library</span>
+                Ferdi<span className="danger">EP</span>
               </h2>
             </div>
             <div className="close" id="close-btn">
@@ -46,9 +44,12 @@ const Sidebar = () => {
             </a>
 
             <div className="logout">
-              <span className="material-icons-sharp" onClick={handleLogout}> logout </span>
+              <span className="material-icons-sharp" onClick={handleLogout}>
+                {" "}
+                logout{" "}
+              </span>
               <h3>Logout</h3>
-              </div>
+            </div>
           </div>
         </aside>
       </div>
