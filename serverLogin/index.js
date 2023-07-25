@@ -8,8 +8,11 @@ const authRoutes = require("./routes/auth");
 const UsertRoute = require("./routes/UserRoute");
 
 // database connection
-connection();
 
+connection();
+app.get("/", (req, res) => {
+  res.send("Halo, ini halaman utama backend!");
+});
 // middlewares
 app.use(express.json());
 app.use(cors());
